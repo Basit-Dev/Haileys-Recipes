@@ -102,6 +102,7 @@ haileys-recipes/
 ## Figma Files
 - **Home Page** ![Home page](/assets/images/home-page-wireframe.png)
 - **Recipe Page** ![Recipe page](/assets/images/recipe-wireframe.png)
+- **About Page** ![Recipe page](/assets/images/about-page-wireframe.png)
 - **Tablet Home Page** ![Tablet home page](/assets/images/tablet-home-page-wireframe.png)
 - **Mobile Home Page** ![Mobile home page](/assets/images/mobile-home-page-wireframe.png)
 - **Mobile Recipe Page** ![Mobile recipe page](/assets/images/recipe-mobile-wireframe.png)

@@ -100,12 +100,15 @@ haileys-recipes/
 ---
 
 ## Figma Files
-- **Home Page** ![Home page](/assets/images/home-page-wireframe.png)
-- **Recipe Page** ![Recipe page](/assets/images/recipe-wireframe.png)
-- **About Page** ![Recipe page](/assets/images/about-page-wireframe.png)
-- **Tablet Home Page** ![Tablet home page](/assets/images/tablet-home-page-wireframe.png)
-- **Mobile Home Page** ![Mobile home page](/assets/images/mobile-home-page-wireframe.png)
-- **Mobile Recipe Page** ![Mobile recipe page](/assets/images/recipe-mobile-wireframe.png)
+- **Home Page Wireframe** ![Home page Wireframe](/assets/images/home-page-wireframe.png)
+- **Recipe Page Wireframe** ![Recipe page Wireframe](/assets/images/recipe-wireframe.png)
+- **About Page Wireframe** ![About page Wireframe](/assets/images/about-page-wireframe.png)
+- **Tablet Home Page Wireframe** ![Tablet home page Wireframe](/assets/images/tablet-home-page-wireframe.png)
+- **Mobile Home Page Wireframe** ![Mobile home page Wireframe](/assets/images/mobile-home-page-wireframe.png)
+- **Mobile Recipe Page Wireframe** ![Mobile recipe page Wireframe](/assets/images/recipe-mobile-wireframe.png)
+- **Home Page Hifi** ![Home page hifi](/assets/images/home-page-hifi.png)
+- **Recipe Page Hifi** ![Recipe page hifi](/assets/images/recipe-page-hifi.png)
+- **About Page Hifi** ![About page hifi](/assets/images/about-page-hifi.png)
 
 
 ## Color Palette

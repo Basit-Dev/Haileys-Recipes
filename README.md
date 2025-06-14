@@ -27,7 +27,7 @@ These user stories describe the features and functionality of the application fr
 
 ---
 
-## What the Website Looks Like
+## What the Website Looks Like & Functionality Overview
 
 ### Search Bar
 - Right near the top
@@ -100,8 +100,24 @@ haileys-recipes/
 ---
 
 ## Figma Files
-- **Home Page** ![Alt Text](/assets/images/home-page-wireframe.png)
-- **Recipe Page** ![Alt Text](/assets/images/recipe-wireframe.png)
-- **Tablet Home Page** ![Alt Text](/assets/images/tablet-home-page-wireframe.png)
-- **Mobile Home Page** ![Alt Text](/assets/images/mobile-home-page-wireframe.png)
-- **Mobile Recipe Page** ![Alt Text](/assets/images/recipe-mobile-wireframe.png)
+- **Home Page** ![Home page](/assets/images/home-page-wireframe.png)
+- **Recipe Page** ![Recipe page](/assets/images/recipe-wireframe.png)
+- **Tablet Home Page** ![Tablet home page](/assets/images/tablet-home-page-wireframe.png)
+- **Mobile Home Page** ![Mobile home page](/assets/images/mobile-home-page-wireframe.png)
+- **Mobile Recipe Page** ![Mobile recipe page](/assets/images/recipe-mobile-wireframe.png)
+
+
+## Color Palette
+
+I chose this color palette to create a clean, modern, and inviting recipe browsing experience. Since the focus of the site is on food, I kept the background mostly white to let the vibrant recipe images pop. Here's a breakdown of the reasoning behind the choices:
+
+- **White background**  
+  Keeps everything feeling open, fresh, and minimal. It puts the spotlight on the food and makes the interface easier to scan.
+
+- **Orange**  
+  This gives a welcoming, energetic feel. Orange is often associated with appetite and positivity. I used it sparingly to highlight actions like filters and “Load More Recipes” without being overwhelming.
+
+- **Dark grey and black text**  
+  Used for strong readability and contrast against the white background. Keeps the content professional and easy to navigate.
+
+  

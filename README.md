@@ -16,6 +16,17 @@ I made it because I wanted to learn how to build websites that are both useful a
 
 ---
 
+## User Stories
+
+These user stories describe the features and functionality of the application from the end-user’s perspective.
+
+### As a visitor:
+- As a user I want to search for a recipe using a keyword, so I can find relevant meal ideas quickly.
+- As a user I want to browse popular or featured recipes on the homepage.
+
+
+---
+
 ## What the Website Looks Like
 
 ### Search Bar
@@ -91,5 +102,6 @@ haileys-recipes/
 ## Figma Files
 - **Home Page** ![Alt Text](/assets/images/home-page-wireframe.png)
 - **Recipe Page** ![Alt Text](/assets/images/recipe-wireframe.png)
+- **Tablet Home Page** ![Alt Text](/assets/images/tablet-home-page-wireframe.png)
 - **Mobile Home Page** ![Alt Text](/assets/images/mobile-home-page-wireframe.png)
 - **Mobile Recipe Page** ![Alt Text](/assets/images/recipe-mobile-wireframe.png)

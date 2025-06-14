@@ -100,15 +100,51 @@ haileys-recipes/
 ---
 
 ## Figma Files
-- **Home Page Wireframe** ![Home page Wireframe](/assets/images/home-page-wireframe.png)
-- **Recipe Page Wireframe** ![Recipe page Wireframe](/assets/images/recipe-wireframe.png)
-- **About Page Wireframe** ![About page Wireframe](/assets/images/about-page-wireframe.png)
-- **Tablet Home Page Wireframe** ![Tablet home page Wireframe](/assets/images/tablet-home-page-wireframe.png)
-- **Mobile Home Page Wireframe** ![Mobile home page Wireframe](/assets/images/mobile-home-page-wireframe.png)
-- **Mobile Recipe Page Wireframe** ![Mobile recipe page Wireframe](/assets/images/recipe-mobile-wireframe.png)
-- **Home Page Hifi** ![Home page hifi](/assets/images/home-page-hifi.png)
-- **Recipe Page Hifi** ![Recipe page hifi](/assets/images/recipe-page-hifi.png)
-- **About Page Hifi** ![About page hifi](/assets/images/about-page-hifi.png)
+
+<p align="center">
+  <strong>Home Page Wireframe</strong><br>
+  <img src="/assets/images/home-page-wireframe.png" alt="Home page Wireframe" width="300" />
+</p>
+
+<p align="center">
+  <strong>Recipe Page Wireframe</strong><br>
+  <img src="/assets/images/recipe-wireframe.png" alt="Recipe page Wireframe" width="300" />
+</p>
+
+<p align="center">
+  <strong>About Page Wireframe</strong><br>
+  <img src="/assets/images/about-page-wireframe.png" alt="About page Wireframe" width="300" />
+</p>
+
+<p align="center">
+  <strong>Tablet Home Page Wireframe</strong><br>
+  <img src="/assets/images/tablet-home-page-wireframe.png" alt="Tablet home page Wireframe" width="300" />
+</p>
+
+<p align="center">
+  <strong>Mobile Home Page Wireframe</strong><br>
+  <img src="/assets/images/mobile-home-page-wireframe.png" alt="Mobile home page Wireframe" width="300" />
+</p>
+
+<p align="center">
+  <strong>Mobile Recipe Page Wireframe</strong><br>
+  <img src="/assets/images/recipe-mobile-wireframe.png" alt="Mobile recipe page Wireframe" width="300" />
+</p>
+
+<p align="center">
+  <strong>Home Page Hi-Fi</strong><br>
+  <img src="/assets/images/home-page-hifi.png" alt="Home page hifi" width="300" />
+</p>
+
+<p align="center">
+  <strong>Recipe Page Hi-Fi</strong><br>
+  <img src="/assets/images/recipe-page-hifi.png" alt="Recipe page hifi" width="300" />
+</p>
+
+<p align="center">
+  <strong>About Page Hi-Fi</strong><br>
+  <img src="/assets/images/about-page-hifi.png" alt="About page hifi" width="300" />
+</p>
 
 
 ## Color Palette

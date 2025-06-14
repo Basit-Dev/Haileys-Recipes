@@ -89,4 +89,4 @@ haileys-recipes/
 ---
 
 ## Figma Files
-- **Home Page** ![Alt Text](image-url)
+- **Home Page** ![Alt Text](/assets/images/home-page-wireframe.png)

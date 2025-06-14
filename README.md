@@ -103,47 +103,47 @@ haileys-recipes/
 
 <p align="center">
   <strong>Home Page Wireframe</strong><br>
-  <img src="/assets/images/figma/home-page-wireframe.png" alt="Home page Wireframe" width="300" />
+  <img src="assets/images/figma/home-page-wireframe.png" alt="Home page Wireframe" width="300" />
 </p>
 
 <p align="center">
   <strong>Recipe Page Wireframe</strong><br>
-  <img src="/assets/images/figma/recipe-wireframe.png" alt="Recipe page Wireframe" width="300" />
+  <img src="assets/images/figma/recipe-wireframe.png" alt="Recipe page Wireframe" width="300" />
 </p>
 
 <p align="center">
   <strong>About Page Wireframe</strong><br>
-  <img src="/assets/images/figma/about-page-wireframe.png" alt="About page Wireframe" width="300" />
+  <img src="assets/images/figma/about-page-wireframe.png" alt="About page Wireframe" width="300" />
 </p>
 
 <p align="center">
   <strong>Tablet Home Page Wireframe</strong><br>
-  <img src="/assets/images/figma/tablet-home-page-wireframe.png" alt="Tablet home page Wireframe" width="300" />
+  <img src="assets/images/figma/tablet-home-page-wireframe.png" alt="Tablet home page Wireframe" width="300" />
 </p>
 
 <p align="center">
   <strong>Mobile Home Page Wireframe</strong><br>
-  <img src="/assets/images/figma/mobile-home-page-wireframe.png" alt="Mobile home page Wireframe" width="300" />
+  <img src="assets/images/figma/mobile-home-page-wireframe.png" alt="Mobile home page Wireframe" width="300" />
 </p>
 
 <p align="center">
   <strong>Mobile Recipe Page Wireframe</strong><br>
-  <img src="/assets/images/figma/recipe-mobile-wireframe.png" alt="Mobile recipe page Wireframe" width="300" />
+  <img src="assets/images/figma/recipe-mobile-wireframe.png" alt="Mobile recipe page Wireframe" width="300" />
 </p>
 
 <p align="center">
   <strong>Home Page Hi-Fi</strong><br>
-  <img src="/assets/images/figma/home-page-hifi.png" alt="Home page hifi" width="300" />
+  <img src="assets/images/figma/home-page-hifi.png" alt="Home page hifi" width="300" />
 </p>
 
 <p align="center">
   <strong>Recipe Page Hi-Fi</strong><br>
-  <img src="/assets/images/figma/recipe-page-hifi.png" alt="Recipe page hifi" width="300" />
+  <img src="assets/images/figma/recipe-page-hifi.png" alt="Recipe page hifi" width="300" />
 </p>
 
 <p align="center">
   <strong>About Page Hi-Fi</strong><br>
-  <img src="/assets/images/figma/about-page-hifi.png" alt="About page hifi" width="300" />
+  <img src="assets/images/figma/about-page-hifi.png" alt="About page hifi" width="300" />
 </p>
 
 

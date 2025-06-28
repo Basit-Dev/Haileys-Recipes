@@ -73,6 +73,10 @@ These helped me figure out how to keep things simple and clean.
 
 ---
 
+## Credits
+- Logo by Canva
+
+---
 ## What I Used to Build This
 
 - **HTML** — for the structure

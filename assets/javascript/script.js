@@ -42,6 +42,15 @@ async function fetchRecipesFromFile() {
 // Show the recipes on the page
 function displayRecipeCards(recipeArray) {
   let recipeSection = document.getElementById('recipes');
+  let noRecipesFoundMessage = document.getElementById('no-recipes');
+
+    // show no recipes found message 
+  if (recipeArray.length === 0) {
+    noRecipesFoundMessage.style.display = 'block';
+    return;
+  } else {
+    noRecipesFoundMessage.style.display = 'none';
+  }
 
   // go through each recipe and create a card
   recipeArray.forEach(function (recipe) {

@@ -99,7 +99,7 @@ ul {
   font-weight: 500;
 }
 
-.nav-links a.active {
+.nav-menu a.active {
   color: #f0821c;
   font-weight: 600;
 }
@@ -199,24 +199,9 @@ ul {
   right: 12px;
 }
 
-/* ---------- LOAD MORE ---------- */
-.load-more {
-  text-align: center;
-}
-
-.load-more button {
-  padding: 0.75rem 2rem;
-  font-size: 1rem;
-  border: none;
-  background-color: #f0821c;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
 /* ---------- FOOTER ---------- */
 footer {
-  background-color: #000000;
+  background-color: #1b1b1b;
   margin-top: 5rem;
   color: white;
   width: 100%;
@@ -224,11 +209,12 @@ footer {
 
 .footer-top {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
-  padding: 4rem 0 4rem 0;
-  border-bottom: 1px solid #eee;
+  justify-content: space-between; 
+  align-items: flex-start;      
+  padding: 2rem;
+  color: #fff;
+  flex-wrap: wrap;            
+  gap: 2rem;                 
 }
 
 .footer-top div {
@@ -247,9 +233,23 @@ footer {
   color: #888;
 }
 
-.social-icons span {
-  margin-right: 1rem;
-  cursor: pointer;
+.map-container {
+  padding-right: 30px;
+}
+.social-links a {
+  margin-right: 10px;
+  display: inline-block;
+
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
 }
 
 /* ---------- RESPONSIVE MEDIA QUERY ---------- */
@@ -393,10 +393,14 @@ input[type="checkbox"] {
 
 .story-box {
   background: #fff;
-  padding: 20px;
+  padding: 30px;
   border: 1px solid #eee;
   border-radius: 8px;
   margin: 20px 0;
+}
+
+.story-box p {
+  padding-top: 10px;
 }
 
 .values {

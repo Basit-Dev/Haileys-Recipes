@@ -75,6 +75,7 @@ These helped me figure out how to keep things simple and clean.
 
 ## Credits
 - Logo by Canva
+- Icons by https://icons8.com
 
 ---
 ## What I Used to Build This

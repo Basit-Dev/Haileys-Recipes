@@ -24,7 +24,7 @@
         </label>
         <nav id="navMenu" class="nav-links">
             <ul>
-                <li><a href="index.html" class="active" target="_self">Home</a></li>
+                <li><a href="index.html" target="_self">Home</a></li>
                 <li><a href="recipe.html" target="_self">Recipes</a></li>
                 <li><a href="about.html" target="_self">About</a></li>
             </ul>
@@ -33,96 +33,59 @@
     </header>
 
     <!-- Header End -->
-
+     
+    
     <main class="recipe-container">
-        <section class="recipe-header">
-            <h2>Fluffy Pancakes</h2>
-            <div class="meta">
-                <span>⏱️ 30 mins</span>
-                <span>🍽️ 4 servings</span>
-                <span>🌱 Vegan</span>
-            </div>
-            <img src="empty.jpg" alt="Fluffy Pancakes with Berries" class="recipe-image" />
-            <p class="description">
-                Classic breakfast pancakes with a fluffy texture, served with fresh berries and maple syrup. Perfect for
-                weekend mornings!
-            </p>
-        </section>
+    <section class="recipe-header">
+      <h2>Loading...</h2>
+      <div class="meta">
+        <!-- Insert meta data inserted dynamically -->
+      </div>
+      <img src="empty.jpg" alt="Recipe Image" class="recipe-image" />
+    </section>
 
-        <section class="recipe-content">
-            <div class="ingredients">
-                <h3>Ingredients</h3>
-                <ul>
-                    <li><input type="checkbox" /> 2 cups all-purpose flour</li>
-                    <li><input type="checkbox" /> 2 tablespoons sugar</li>
-                    <li><input type="checkbox" /> 2 teaspoons baking powder</li>
-                    <li><input type="checkbox" /> 1 teaspoon salt</li>
-                    <li><input type="checkbox" /> 2 large eggs</li>
-                    <li><input type="checkbox" /> 1½ cups milk</li>
-                    <li><input type="checkbox" /> ¼ cup melted butter</li>
-                    <li><input type="checkbox" /> 1 teaspoon vanilla extract</li>
-                    <li><input type="checkbox" /> Fresh berries for serving</li>
-                    <li><input type="checkbox" /> Maple syrup for serving</li>
-                </ul>
-            </div>
+    <section class="recipe-content">
+      <div class="ingredients">
+        <h3>Ingredients</h3>
+        <ul>
+          <!-- Ingredients inserted dynamically -->
+        </ul>
+      </div>
 
-            <div class="instructions">
-                <h3>Instructions</h3>
-                <div class="step">
-                    <div class="circle">1</div>
-                    <p>In another bowl, beat the eggs, then whisk in milk, melted butter, and vanilla extract until smooth.</p>
-                </div>
-                <div class="step">
-                    <div class="circle">2</div>
-                    <p>Pour the wet ingredients into the dry ingredients and stir just until combined. Don’t overmix - a few lumps are okay.</p>
-                </div>
-                <div class="step">
-                    <div class="circle">3</div>
-                    <p>Heat a lightly oiled griddle or non-stick pan over medium heat. Pour ¼ cup of batter for each
-                    pancake.</p>
-                </div>
-                <div class="step">
-                    <div class="circle">4</div>
-                    <p>Cook until bubbles form on the surface and edges look dry, about 2–3 minutes. Flip and cook for another 1–2 minutes.</p>
-                </div>
-                <div class="step">
-                    <div class="circle">5</div>
-                    <p>Serve immediately with fresh berries and maple syrup. Enjoy your fluffy pancakes!</p>
-                </div>
-            </div>
-        </section>
-    </main>
+      <div class="instructions">
+        <h3>Instructions</h3>
+        <!-- Instructions step inserted dynamically -->
+      </div>
+    </section>
+  </main>
 
-    <!-- Footer -->
+      <!-- Footer -->
     <footer>
         <div class="footer-top">
             <div>
-                <h2>Hailey's Recipes</h2>
+                <h3>Hailey's Recipes</h3>
                 <p>Discover and share amazing recipes from around the world.</p>
             </div>
+
             <div>
-                <h3>Categories</h3>
-                <ul>
-                    <li>Breakfast</li>
-                    <li>Lunch</li>
-                    <li>Dinner</li>
-                    <li>Desserts</li>
-                </ul>
+                <h3>Our Location</h3>
+               <p>123 Hailey Rd</p>
+               <p>Hailey City, PO BOX 123</p>
             </div>
-            <div>
-                <h3>Dietary</h3>
-                <ul>
-                    <li>Vegan</li>
-                    <li>Vegetarian</li>
-                    <li>Gluten-Free</li>
-                    <li>Keto</li>
-                </ul>
-            </div>
-            <div>
+            <div class="social-links">
                 <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <span>FB</span><span>TW</span><span>YT</span><span>IG</span>
-                </div>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="assets/icons/facebook.svg" alt="Facebook" />
+                </a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="assets/icons/twitter.svg" alt="Twitter" />
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="assets/icons/instagram.svg" alt="Instagram" />
+                </a>
+                <a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest">
+                    <img src="assets/icons/pinterest.svg" alt="Pinterest" />
+                </a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -132,5 +95,8 @@
     <!-- Footer End -->
 
 </body>
+
+    <script src="assets/javascript/script.js"></script>
+
 
 </html>

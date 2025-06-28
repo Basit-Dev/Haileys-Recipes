@@ -41,7 +41,7 @@ a {
   color: inherit;
 }
 .nav-links a.active  {
-  color: orange;
+  color: #f0821c;
 }
 
 ul {

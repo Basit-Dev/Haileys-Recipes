@@ -106,9 +106,14 @@ haileys-recipes/
 ## Figma Files
 
 <p align="center">
+  <strong>Colour Theme</strong><br>
+  <img src="assets/images/figma/colour-theme.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
   <strong>Home Page Wireframe</strong><br>
   <img src="assets/images/figma/home-page-wireframe.png" alt="Home page Wireframe" width="300" />
-</p>
+</p>   
 
 <p align="center">
   <strong>Recipe Page Wireframe</strong><br>

@@ -58,6 +58,7 @@ function displayRecipeCards(recipeArray) {
     card.classList.add('card');
 
     card.innerHTML = `
+        <a href="recipe.html?id=${recipe.idMeal}">
         <img src="${recipe.strMealThumb}" alt="${recipe.strMeal}">
         <div class="badge time">~15 min</div>
         <div class="card-content">
@@ -65,18 +66,59 @@ function displayRecipeCards(recipeArray) {
           <p>${recipe.strInstructions.slice(0, 85)}...</p>
           <span class="category">${recipe.strCategory}</span>
         </div>
+        </a>
     `;
 
     recipeSection.appendChild(card);
   });
 }
 
+/**
+ * Get the recipe information that matches the ID.
+ * 
+ * @param {String} recipeId - To display a recipe based of the ID.
+ * @returns {String} - Recipe ID
+ */
+
+// Get recipe details for the recipe page that matches the ID 
+async function getRecipeInfo(recipeId) {
+  let response = await fetch('assets/data/sample_meals.json');
+  let data = await response.json();
+  return data.meals.find(function (meal) {
+    return meal.idMeal === recipeId;
+  });
+}
+
+/**
+ * Displays recipe information on the recipe page.
+ * 
+ * @param {Array} recipe - An array of recipe information to display.
+ */
+
+function showRecipePageDetails(recipe) {
+  document.querySelector('.recipe-header h2').textContent = recipe.strMeal;
+  document.querySelector('.recipe-image').src = recipe.strMealThumb;
+  document.querySelector('.description').textContent = recipe.strInstructions;
+}
 
 
 // Start the app when the page is ready
 document.addEventListener('DOMContentLoaded', async function () {
-
-  // Display the recipes
-    allRecipes = await fetchRecipesFromFile();
-    displayRecipeCards(allRecipes);
+  // Check which page has loaded
+  let recipeHomePage = document.getElementById('recipes');
+  let recipePage = document.querySelector('.recipe-header');
+  
+    // If we're on the main recipe list page
+    if (recipeHomePage) {
+        allRecipes = await fetchRecipesFromFile();
+        displayRecipeCards(allRecipes);
+    }
+  // If we're on the recipe details page
+  if (recipePage) {
+    let recipeId = new URLSearchParams(window.location.search).get('id');
+    if (recipeId) {
+      let recipe = await getRecipeInfo(recipeId);
+      showRecipePageDetails(recipe);
+    }
+  }
 });

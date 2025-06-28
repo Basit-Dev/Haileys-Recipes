@@ -86,73 +86,56 @@ These helped me figure out how to keep things simple and clean.
 
 ---
 
-## File Structure (What’s in the Project)
-
-
-haileys-recipes/
-├── index.html          # Main page
-├── css/
-│   └── styles.css      # Styling
-├── js/
-│   └── main.js         # JavaScript functionality
-├── assets/
-│   ├── images/         # Recipe images
-│   └── icons/          # Icons or logos
-└── README.md           # This file!
-
-
----
-
 ## Figma Files
 
 <p align="center">
   <strong>Colour Theme</strong><br>
-  <img src="assets/images/figma/colour-theme.png" alt="Colour Theme" width="300" />
+  <img src="documentation/wireframes/figma/colour-theme.png" alt="Colour Theme" width="300" />
 </p>
 
 <p align="center">
   <strong>Home Page Wireframe</strong><br>
-  <img src="assets/images/figma/home-page-wireframe.png" alt="Home page Wireframe" width="300" />
+  <img src="documentation/wireframes/figma/home-page-wireframe.png" alt="Home page Wireframe" width="300" />
 </p>   
 
 <p align="center">
   <strong>Recipe Page Wireframe</strong><br>
-  <img src="assets/images/figma/recipe-wireframe.png" alt="Recipe page Wireframe" width="300" />
+  <img src="documentation/wireframes/figma/recipe-wireframe.png" alt="Recipe page Wireframe" width="300" />
 </p>
 
 <p align="center">
   <strong>About Page Wireframe</strong><br>
-  <img src="assets/images/figma/about-page-wireframe.png" alt="About page Wireframe" width="300" />
+  <img src="documentation/wireframes/figma/about-page-wireframe.png" alt="About page Wireframe" width="300" />
 </p>
 
 <p align="center">
   <strong>Tablet Home Page Wireframe</strong><br>
-  <img src="assets/images/figma/tablet-home-page-wireframe.png" alt="Tablet home page Wireframe" width="300" />
+  <img src="documentation/wireframes/figma/tablet-home-page-wireframe.png" alt="Tablet home page Wireframe" width="300" />
 </p>
 
 <p align="center">
   <strong>Mobile Home Page Wireframe</strong><br>
-  <img src="assets/images/figma/mobile-home-page-wireframe.png" alt="Mobile home page Wireframe" width="300" />
+  <img src="documentation/wireframes/figma/mobile-home-page-wireframe.png" alt="Mobile home page Wireframe" width="300" />
 </p>
 
 <p align="center">
   <strong>Mobile Recipe Page Wireframe</strong><br>
-  <img src="assets/images/figma/recipe-mobile-wireframe.png" alt="Mobile recipe page Wireframe" width="300" />
+  <img src="documentation/wireframes/figma/recipe-mobile-wireframe.png" alt="Mobile recipe page Wireframe" width="300" />
 </p>
 
 <p align="center">
   <strong>Home Page Hi-Fi</strong><br>
-  <img src="assets/images/figma/home-page-hifi.png" alt="Home page hifi" width="300" />
+  <img src="documentation/wireframes/figma/home-page-hifi.png" alt="Home page hifi" width="300" />
 </p>
 
 <p align="center">
   <strong>Recipe Page Hi-Fi</strong><br>
-  <img src="assets/images/figma/recipe-page-hifi.png" alt="Recipe page hifi" width="300" />
+  <img src="documentation/wireframes/figma/recipe-page-hifi.png" alt="Recipe page hifi" width="300" />
 </p>
 
 <p align="center">
   <strong>About Page Hi-Fi</strong><br>
-  <img src="assets/images/figma/about-page-hifi.png" alt="About page hifi" width="300" />
+  <img src="documentation/wireframes/figma/about-page-hifi.png" alt="About page hifi" width="300" />
 </p>
 
 

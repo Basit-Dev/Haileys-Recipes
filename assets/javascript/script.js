@@ -1,8 +1,25 @@
 // Simple variables to remember what's happening
 let allRecipes = []; // stores all the recipes we load
 
+// Show the spinner when loading data
+function showSpinner() {
+  let spinner = document.getElementById('spinner');
+  if (spinner) {
+    spinner.style.display = 'flex';
+  }
+}
+
+// Hide the spinner when loading is done
+function hideSpinner() {
+  let spinner = document.getElementById('spinner');
+  if (spinner) {
+    spinner.style.display = 'none';
+  }
+}
+
 // Load recipes from the JSON file
 async function fetchRecipesFromFile() {
+    showSpinner(); 
   try {
     let response = await fetch('assets/data/sample_meals.json');
     let data = await response.json();
@@ -10,6 +27,8 @@ async function fetchRecipesFromFile() {
   } catch (error) {
     console.log('Oops, something went wrong while getting recipes!', error);
     return [];
+  } finally {
+    hideSpinner(); // always hide spinner at the end otherwise it will keep showing the spinner
   }
 }
 

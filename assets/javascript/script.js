@@ -21,16 +21,23 @@ function hideSpinner() {
 async function fetchRecipesFromFile() {
     showSpinner(); 
   try {
-    let response = await fetch('assets/data/sample_meals.json');
-    let data = await response.json();
-    return data.meals;
+    let response = await fetch('assets/data/sample_meals.json'); // Fetch the file
+    let data = await response.json();   // Convert to JSON
+    return data.meals; // Return the array inside 'meals'
   } catch (error) {
     console.log('Oops, something went wrong while getting recipes!', error);
-    return [];
+    return []; // Return an empty array on error
   } finally {
     hideSpinner(); // always hide spinner at the end otherwise it will keep showing the spinner
   }
 }
+
+
+/**
+ * Displays recipe cards on the web page.
+ * 
+ * @param {Array} recipeArray - An array of recipe objects to display.
+ */
 
 // Show the recipes on the page
 function displayRecipeCards(recipeArray) {

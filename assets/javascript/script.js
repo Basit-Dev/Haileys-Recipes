@@ -49,6 +49,9 @@ function displayRecipeCards(recipeArray) {
   let recipeSection = document.getElementById("recipes");
   let noRecipesFoundMessage = document.getElementById("no-recipes");
 
+  recipeSection.innerHTML = ""; 
+  // Clear any old cards for when searching recipes
+
   // show no recipes found message
   if (recipeArray.length === 0) {
     noRecipesFoundMessage.style.display = "block";
@@ -159,6 +162,34 @@ function showRecipePageDetails(recipe) {
   `; // Display No Category if not available
 }
 
+/**
+ * Function to find recipes.
+ * It listens for typing and shows recipes that match the text.
+ */
+function searchRecipes() {
+  let searchBox = document.getElementById("search-input");
+
+  if (searchBox) {
+    searchBox.addEventListener("input", function () {
+      // Get what the user typed and make it lowercase
+      let searchText = searchBox.value.toLowerCase();
+
+      // Make a new list of recipes that match the search
+      let foundRecipes = allRecipes.filter(function (recipe) {
+        // Check if the name, instructions or category include what the user typed
+        let name = recipe.strMeal.toLowerCase().includes(searchText);
+        let instruction = recipe.strInstructions.toLowerCase().includes(searchText);
+        let category = recipe.strCategory.toLowerCase().includes(searchText);
+
+        return name || instruction || category;
+      });
+
+      // Show the filtered recipes
+      displayRecipeCards(foundRecipes);
+    });
+  }
+}
+
 // Start the app when the page is ready
 document.addEventListener("DOMContentLoaded", async function () {
   // Check which page has loaded
@@ -169,6 +200,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   if (recipeHomePage) {
     allRecipes = await fetchRecipesFromFile();
     displayRecipeCards(allRecipes);
+    searchRecipes();
   }
   // If we're on the recipe details page
   if (recipePage) {

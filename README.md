@@ -102,7 +102,7 @@ These helped me figure out how to keep things simple and clean.
 
 <p align="center">
   <strong>Recipe Page Wireframe</strong><br>
-  <img src="documentation/wireframes/figma/recipe-wireframe.png" alt="Recipe page Wireframe" width="300" />
+  <img src="documentation/wireframes/figma/recipe-page-wireframe.png" alt="Recipe page Wireframe" width="300" />
 </p>
 
 <p align="center">
@@ -122,7 +122,7 @@ These helped me figure out how to keep things simple and clean.
 
 <p align="center">
   <strong>Mobile Recipe Page Wireframe</strong><br>
-  <img src="documentation/wireframes/figma/recipe-mobile-wireframe.png" alt="Mobile recipe page Wireframe" width="300" />
+  <img src="documentation/wireframes/figma/mobile-recipe-page-wireframe.png" alt="Mobile recipe page Wireframe" width="300" />
 </p>
 
 <p align="center">

@@ -77,6 +77,7 @@ These helped me figure out how to keep things simple and clean.
 - Logo by Canva
 - Icons by https://icons8.com
 - Show instructions and display in a numbered steps sequence credits to StackOverflow and YouTube.
+- Sample ingredients list credit to https://www.themealdb.com/
 
 ---
 ## What I Used to Build This

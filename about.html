@@ -14,22 +14,22 @@
     <!-- Header -->
     <header class="header">
         <div class="logo-container">
-           <a href="index.html" class="logo">
-            <img src="./assets/images/logo/main-logo.png" alt="Logo" />
-            <span>Hailey's Recipes</span></a>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <nav id="navMenu" class="nav-links">
-            <ul>
-                <li><a href="index.html" target="_self">Home</a></li>
-                <li><a href="recipe.html" target="_self">Recipes</a></li>
-                <li><a href="about.html" target="_self">About</a></li>
-            </ul>
-        </nav>
+            <a href="index.html" class="logo">
+                <img src="./assets/images/logo/main-logo.png" alt="Logo" />
+                <span>Hailey's Recipes</span></a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav id="navMenu" class="nav-links">
+                <ul>
+                    <li><a href="index.html" target="_self">Home</a></li>
+                    <li><a href="recipe.html" target="_self">Recipes</a></li>
+                    <li><a href="about.html" target="_self">About</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -51,7 +51,7 @@
 
                 Whether you’re a beginner cook, a busy parent, or someone just looking for inspiration, you’ll find
                 something here for you.</p>
-                <P>           From quick breakfasts to cozy dinners, vegan favorites to sweet treats. Hailey’s Recipes is all about
+            <P> From quick breakfasts to cozy dinners, vegan favorites to sweet treats. Hailey’s Recipes is all about
                 real food that’s fun to make and even better to eat.
 
                 Thanks for visiting! I hope you enjoy cooking these meals as much as I enjoy sharing them.</P>
@@ -62,18 +62,18 @@
             <div class="value-cards">
                 <div class="about-card">
                     <div class="icon">🧡</div>
-                    <h4>Heading</h4>
-                    <p>Paragraph</p>
+                    <h4>Love</h4>
+                    <p>Eating</p>
                 </div>
                 <div class="about-card">
                     <div class="icon">🧡</div>
-                    <h4>Heading</h4>
-                    <p>Paragraph</p>
+                    <h4>Happy</h4>
+                    <p>Food</p>
                 </div>
                 <div class="about-card">
                     <div class="icon">🧡</div>
-                    <h4>Heading</h4>
-                    <p>Paragraph</p>
+                    <h4>Enjoy</h4>
+                    <p>Cooking</p>
                 </div>
             </div>
         </section>
@@ -82,12 +82,12 @@
             <h3>Get in Touch</h3>
             <p>Have questions, suggestions, or want to share your cooking story? We’d love to hear from you!</p>
 
-            <form>
+            <form id="contact-form">
                 <h4>Send us a Message</h4>
-                <input type="text" placeholder="Full Name" required />
-                <input type="email" placeholder="Email Address" required />
-                <input type="text" placeholder="Subject" />
-                <textarea placeholder="Message" rows="5"></textarea>
+                <input type="text" name="fullname" placeholder="Full Name" required />
+                <input type="email" name="email" placeholder="Email Address" required />
+                <input type="text" name="subject" placeholder="Subject" />
+                <textarea name="message" placeholder="Message" rows="5"></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </section>
@@ -127,6 +127,8 @@
         </div>
     </footer>
     <!-- Footer End -->
+
+        <script src="assets/javascript/script.js"></script>
 
 </body>
 

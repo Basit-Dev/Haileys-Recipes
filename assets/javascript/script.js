@@ -111,6 +111,19 @@ function showRecipePageDetails(recipe) {
       ingredientsList.appendChild(listItem);
     }
   }
+
+  // Show instructions
+  let instructions = recipe.strInstructions;
+  let instructionSteps = document.querySelector(".instructions");
+  instructionSteps.innerHTML = "<h3>Instructions</h3>";
+
+  let stepDiv = document.createElement("div");
+  stepDiv.classList.add("step");
+  stepDiv.innerHTML = `
+      <div class="circle">${1}</div>
+      <p>${instructions}</p>
+    `;
+  instructionSteps.appendChild(stepDiv);
 }
 
 // Start the app when the page is ready

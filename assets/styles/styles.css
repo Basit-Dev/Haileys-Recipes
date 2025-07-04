@@ -7,9 +7,15 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #fafafa;
+  background-color: var(--main);
   line-height: 1.6;
-  color: #333;
+  color: var(--secondary);
+}
+
+:root {
+  --main: #ffffff;         
+  --secondary: #363636;            
+  --accent-color: #f0821c;         
 }
 
 /* ---------- PAGE CONTAINER ---------- */
@@ -42,7 +48,7 @@ nav ul {
 }
 
 nav a {
-  color: grey;
+  color: var(--secondary);
   font-weight: 500;
 }
 
@@ -51,7 +57,7 @@ a {
   color: inherit;
 }
 .nav-links a.active  {
-  color: #f0821c;
+    color: var(--accent-color);
 }
 
 ul {
@@ -88,7 +94,7 @@ ul {
 .hamburger span {
   height: 3px;
   width: 25px;
-  background-color: #0d1a4a;
+  background-color: var(--secondary);
   border-radius: 2px;
   transition: 0.3s ease;
 }
@@ -108,7 +114,7 @@ ul {
 }
 
 .nav-menu a.active {
-  color: #f0821c;
+  color: var(--accent-color);
   font-weight: 600;
 }
 
@@ -134,27 +140,6 @@ ul {
   border-radius: 8px;
 }
 
-.filter-buttons {
-  margin-top: 1.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.filter-buttons button {
-  padding: 0.5rem 1rem;
-  border: none;
-  background-color: #eee;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.filter-buttons .active {
-  background-color: #f0821c;
-  color: white;
-}
-
 /* ---------- RECIPE GRID ---------- */
 .grid-container {
   margin-top: 3rem;
@@ -167,7 +152,7 @@ ul {
 }
 
 .card {
-  background: white;
+  background: var(--main);
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -183,8 +168,8 @@ ul {
   position: absolute;
   bottom: 12px;
   left: 1.5rem;
-  background-color: #f0821c;
-  color: white;
+  background-color: var(--accent-color);
+  color: var(--main);
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
   font-size: 0.8rem;
@@ -220,7 +205,7 @@ footer {
   justify-content: space-between; 
   align-items: flex-start;      
   padding: 2rem;
-  color: #fff;
+  color: var(--main);
   flex-wrap: wrap;            
   gap: 2rem;                 
 }
@@ -271,7 +256,7 @@ footer {
     top: 70px;
     left: 0;
     width: 100%;
-    background: #fff;
+    background: var(--main);
     display: none;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     z-index: 10;
@@ -325,7 +310,7 @@ footer {
 }
 
 .ingredients {
-   background-color: #f0f0f0;
+   background-color: var(--main);;
    border: none;
    border-radius: 10px;
 }
@@ -372,8 +357,8 @@ input[type="checkbox"] {
 .circle {
   width: 32px;
   height: 32px;
-  background-color: #11182c;
-  color: white;
+  background-color: var(--accent-color);;
+  color: var(--main);
   font-weight: bold;
   font-size: 16px;
   border-radius: 50%;
@@ -400,7 +385,7 @@ input[type="checkbox"] {
 }
 
 .story-box {
-  background: #fff;
+  background: var(--main);
   padding: 30px;
   border: 1px solid #eee;
   border-radius: 8px;
@@ -425,7 +410,7 @@ input[type="checkbox"] {
 }
 
 .about-card {
-  background: #fff;
+  background: var(--main);
   border: 1px solid #eee;
   padding: 20px;
   border-radius: 8px;
@@ -442,7 +427,7 @@ input[type="checkbox"] {
 }
 
 form {
-  background: #fff;
+  background: var(--main);
   padding: 30px 50px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -461,8 +446,8 @@ form input, form textarea {
 }
 
 form button {
-  background: #ff6a00;
-  color: white;
+  background: var(--accent-color);
+  color: var(--main);
   border: none;
   padding: 12px;
   font-size: 16px;

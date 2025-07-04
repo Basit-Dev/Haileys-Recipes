@@ -219,4 +219,14 @@ document.addEventListener("DOMContentLoaded", async function () {
       form.reset(); // Optional: clear the form
     });
   }
+
+  // Highlight the active links in the nav bar
+  let currentFile = window.location.pathname.split('/').pop();
+  let menuLinks = document.querySelectorAll('#nav-menu a');
+
+  menuLinks.forEach(function (link) {
+    if (link.getAttribute('href') === currentFile) {
+      link.classList.add('active');
+    }
+  });
 });

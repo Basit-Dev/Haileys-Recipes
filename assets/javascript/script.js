@@ -17,6 +17,12 @@ function hideSpinner() {
   }
 }
 
+
+/**
+ * Loads recipes from the JSON file.
+ * @returns {Promise} A Promise that resolves to an array of recipe objects.
+ */
+
 // Load recipes from the JSON file
 async function fetchRecipesFromFile() {
   showSpinner();
@@ -122,7 +128,7 @@ function showRecipePageDetails(recipe) {
   // Create an empty list to hold the clean INSTRCUTION steps
   let stepList = [];
 
-  // Go through each piece and clean it up
+  // Go through each step and clean it up
   for (let i = 0; i < instructionExtracted.length; i++) {
     let step = instructionExtracted[i].trim(); // remove extra spaces
 
@@ -143,6 +149,14 @@ function showRecipePageDetails(recipe) {
     `;
     instructionSteps.appendChild(stepDiv);
   });
+
+      // Show meta info
+  let metaInfo = document.querySelector('.meta');
+  metaInfo.innerHTML = `
+    <span>⏱️ ~15 mins</span>
+    <span>🍽️ 2 servings</span>
+    <span>🌱 ${recipe.strCategory || 'No Category'}</span>
+  `; // Display No Category if not available
 }
 
 // Start the app when the page is ready

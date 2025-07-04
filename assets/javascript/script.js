@@ -112,18 +112,37 @@ function showRecipePageDetails(recipe) {
     }
   }
 
-  // Show instructions
-  let instructions = recipe.strInstructions;
+  // Show instructions and display in a numbered steps sequence
+  // Get the full instruction text from the recipe
+  let instructions = recipe.strInstructions
+
+  // Split the instructions into parts (by newlines or periods REGEX)
+  let instructionExtracted = instructions.split(/\r?\n|\.\s+/);
+
+  // Create an empty list to hold the clean INSTRCUTION steps
+  let stepList = [];
+
+  // Go through each piece and clean it up
+  for (let i = 0; i < instructionExtracted.length; i++) {
+    let step = instructionExtracted[i].trim(); // remove extra spaces
+
+    if (step.length > 0) {
+      stepList.push(step); // only add it if it's not empty
+    }
+  }
+
   let instructionSteps = document.querySelector(".instructions");
   instructionSteps.innerHTML = "<h3>Instructions</h3>";
 
-  let stepDiv = document.createElement("div");
-  stepDiv.classList.add("step");
-  stepDiv.innerHTML = `
-      <div class="circle">${1}</div>
-      <p>${instructions}</p>
+  stepList.forEach(function (steps, index) {
+    let stepDiv = document.createElement("div");
+    stepDiv.classList.add("step");
+    stepDiv.innerHTML = `
+      <div class="circle">${index + 1}</div>
+      <p>${steps}</p>
     `;
-  instructionSteps.appendChild(stepDiv);
+    instructionSteps.appendChild(stepDiv);
+  });
 }
 
 // Start the app when the page is ready

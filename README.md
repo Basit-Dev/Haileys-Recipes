@@ -64,11 +64,13 @@ These helped me figure out how to keep things simple and clean.
 ## API
 - There is a charge for the API from https://www.themealdb.com/ therefore I have created a sample JSON file that represents the data.
 
-## Credits
+## Credits and Acknowledge
 - Logo by Canva
 - Icons by https://icons8.com
 - Show instructions and display in a numbered steps sequence credits to StackOverflow and YouTube.
 - Sample ingredients list credit to https://www.themealdb.com/
+- Spinner design based on CSS Loaders (https://cssloaders.github.io/).
+- Tutorial guidance from the Net Ninja’s JavaScript series.
 
 ---
 ## What I Used to Build This
@@ -183,7 +185,7 @@ Automated testing uses tools like Jest to test the logic.
 ---
 
 
-## Test 
+## Testing 
 
 This test plan checks the website for functionality, usability, and responsiveness.
 
@@ -223,6 +225,11 @@ This test plan checks the website for functionality, usability, and responsivene
 
 1. After making changes to the code or styles, go through these steps again.
 2. Make sure search, recipes, and the contact form still work as expected.
+
+<p align="center">
+  <strong>Manual testing Spredsheet</strong><br>
+  <img src="documentation/test/manual-test-spreadsheet.png" alt="Colour Theme" width="300" />
+</p>
 
 ---
 
@@ -309,11 +316,61 @@ This test plan checks the website for functionality, usability, and responsivene
   <img src="documentation/test/recipe-not-selected-screenshot.png" alt="Colour Theme" width="300" />
 </p>
 
+<p align="center">
+  <strong>Responsive 1</strong><br>
+  <img src="documentation/test/responsive-screenshot-1.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>Responsive 2</strong><br>
+  <img src="documentation/test/responsive-screenshot-2.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>Responsive 3</strong><br>
+  <img src="documentation/test/responsive-screenshot-3.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>Responsive 4</strong><br>
+  <img src="documentation/test/responsive-screenshot-4.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>Responsive 5</strong><br>
+  <img src="documentation/test/responsive-screenshot-5.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>Chrome Home</strong><br>
+  <img src="documentation/test/browser/chrome-home.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>Chrome About</strong><br>
+  <img src="documentation/test/browser/chrome-about.png" alt="Colour Theme" width="300" />
+</p>
  
+<p align="center">
+  <strong>FireFox Home</strong><br>
+  <img src="documentation/test/browser/firefox-home.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>FireFox Recipe</strong><br>
+  <img src="documentation/test/browser/firefox-recipe.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>Safari Home</strong><br>
+  <img src="documentation/test/browser/safari-home.png" alt="Colour Theme" width="300" />
+</p>
+
 ---
 
-## GitHub Pages Live Link of working project
+## Deployment GitHub Pages Live Link of working project
 -- https://basit-dev.github.io/Haileys-Recipes/index.html
+
 
 
 ## Screenshots of Git Commits
@@ -334,3 +391,34 @@ This test plan checks the website for functionality, usability, and responsivene
 </p>
 
 ---
+
+## Project Development
+
+### Development Steps & Key Milestones
+
+- **Project Initialization:** Set up the file structure using HTML, CSS, and JavaScript. Organized assets into logical folders.
+- **Recipe Card Rendering:** Fetched local JSON data and dynamically generated recipe cards using JavaScript DOM manipulation.
+- **Search Implementation:** Created a live search filter that matches user input across recipe names, instructions, and categories.
+- **Details Page:** Implemented recipe detail views with ingredients and instructions parsed from structured fields.
+- **Form Functionality:** Added a contact form with JavaScript alert feedback and form reset functionality.
+- **Loading Experience:** Included a custom loading spinner and conditional rendering for “no results found.”
+
+---
+
+### Challenges & How They Were Overcome
+
+- **Handling Missing Data:** Some recipes had incomplete ingredient lists. Solved by validating each item before displaying it.
+- **Sticky Footer on Short Pages:** The footer didn’t align with the bottom on small-content pages. Fixed using a flexbox layout with `min-height: 100vh`.
+- **Strict Linting (JSLint):** Faced multiple warnings related to globals, and quotes. Declared globals like `alert` and `URLSearchParams`, and followed ESLint’s formatting rules.
+- **Mobile Optimization:** Resolved overlapping layout issues and fine-tuned spacing for various screen sizes using media queries.
+
+---
+
+### Tools & Practices
+
+- **Languages:** HTML5, CSS3, JavaScript 
+- **Version Control:** Git and GitHub for repository hosting
+- **Linting:** ESLint used for code quality and consistency
+- **Debugging & Testing:** Browser DevTools for layout testing and responsive design
+- **Deployment:** GitHub Pages for live project hosting
+- **Best Practices:** Used semantic HTML, organized code into logical functions, and included accessibility-friendly labels and alt text

@@ -456,3 +456,52 @@ I followed these steps to deploy on GitHub Pages.
   <img src="documentation/test/performance/lighthouse-about.png" alt="Colour Theme" width="300" />
 </p>
 
+---
+
+### Installation / Setup Instructions
+
+If someone wants to run this project locally:
+
+1. Clone the repository:
+   - git clone https://github.com/Basit-Dev/Haileys-Recipes.git
+   - Navigate to the project folder.
+   - Open the index.html file in the browser.
+
+--- 
+
+### Additional Content
+
+  **Future Improvements:**
+  - Add a backend to store user-submitted recipes.
+	- Implement dark mode.
+	- Add pagination or lazy loading for large recipe datasets.
+	- Improve animations and transitions for smoother UX.    
+
+
+## How to Use the Website
+
+Using this recipe website is simple and intuitive. Here's how:
+
+1. **Browse Recipes**  
+   - On the homepage, a selection of recipes will load automatically.
+
+2. **Search Recipes**  
+   - Use the search bar at the top to find recipes by name, ingredient, or category.
+
+3. **View Recipe Details**  
+   - Click on any recipe card to open a detailed page with ingredients and instructions.
+
+4. **Check Ingredients**  
+   - Tick the checkbox next to ingredients as you collect them.
+
+5. **Follow Cooking Steps**  
+   - Instructions are shown in clear, numbered steps.
+
+6. **Use Navigation**  
+   - Navigate between pages (Home, Recipes, About) using the header menu.
+
+7. **Submit Contact Form**  
+   - Go to the "About" section and fill out the form to send a message.  
+   - A confirmation alert will show once submitted.
+
+--- 

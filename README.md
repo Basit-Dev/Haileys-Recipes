@@ -132,6 +132,8 @@ These helped me figure out how to keep things simple and clean.
   <img src="documentation/wireframes/figma/about-page-hifi.png" alt="About page hifi" width="300" />
 </p>
 
+---
+
 
 ## Color Palette
 
@@ -223,6 +225,28 @@ This test plan checks the website for functionality, usability, and responsivene
 2. Make sure search, recipes, and the contact form still work as expected.
 
 ---
-  
 
-  
+
+## Screenshots of validation
+
+<p align="center">
+  <strong>index.html</strong><br>
+  <img src="documentation/validation/index.html validation.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>recipe.html</strong><br>
+  <img src="documentation/validation/recipe.html validation.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>about.html</strong><br>
+  <img src="documentation/validation/about.html validation.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>css</strong><br>
+  <img src="documentation/validation/css-validation.png" alt="Colour Theme" width="300" />
+</p>
+
+---

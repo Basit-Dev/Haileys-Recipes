@@ -1,19 +1,21 @@
+/* global document, window, console, fetch, alert, URLSearchParams */
+
 // Simple variables to remember what's happening
 let allRecipes = []; // stores all the recipes we load
 
 // Show the spinner when loading data
 function showSpinner() {
-  let spinner = document.getElementById("spinner");
+  const spinner = document.getElementById('spinner');
   if (spinner) {
-    spinner.style.display = "flex";
+    spinner.style.display = 'flex';
   }
 }
 
 // Hide the spinner when loading is done
 function hideSpinner() {
-  let spinner = document.getElementById("spinner");
+  const spinner = document.getElementById('spinner');
   if (spinner) {
-    spinner.style.display = "none";
+    spinner.style.display = 'none';
   }
 }
 
@@ -26,14 +28,15 @@ function hideSpinner() {
 async function fetchRecipesFromFile() {
   showSpinner();
   try {
-    let response = await fetch("assets/data/sample_meals.json"); // Fetch the file
-    let data = await response.json(); // Convert to JSON
+    const response = await fetch('assets/data/sample_meals.json');
+    const data = await response.json(); // Convert to JSON
     return data.meals; // Return the array inside 'meals'
   } catch (error) {
-    console.log("Oops, something went wrong while getting recipes!", error);
+    console.log('Oops, something went wrong while getting recipes!', error);
     return []; // Return an empty array on error
   } finally {
-    hideSpinner(); // always hide spinner at the end otherwise it will keep showing the spinner
+    hideSpinner();
+    // always hide spinner at the end otherwise it will keep showing the spinner
   }
 }
 
@@ -45,24 +48,23 @@ async function fetchRecipesFromFile() {
 
 // Show the recipes on the page
 function displayRecipeCards(recipeArray) {
-  let recipeSection = document.getElementById("recipes");
-  let noRecipesFoundMessage = document.getElementById("no-recipes");
+  const recipeSection = document.getElementById('recipes');
+  const noRecipesFoundMessage = document.getElementById('no-recipes');
 
-  recipeSection.innerHTML = "";
+  recipeSection.innerHTML = '';
   // Clear any old cards for when searching recipes
 
   // show no recipes found message
   if (recipeArray.length === 0) {
-    noRecipesFoundMessage.style.display = "block";
-    return;
-  } else {
-    noRecipesFoundMessage.style.display = "none";
+    noRecipesFoundMessage.style.display = 'block';
+    return; // Stop here if no recipes found
   }
+  noRecipesFoundMessage.style.display = 'none';
 
   // go through each recipe and create a card
-  recipeArray.forEach(function (recipe) {
-    let card = document.createElement("div");
-    card.classList.add("card");
+  recipeArray.forEach((recipe) => {
+    const card = document.createElement('div');
+    card.classList.add('card');
 
     card.innerHTML = `
         <a href="recipe.html?id=${recipe.idMeal}">
@@ -89,11 +91,9 @@ function displayRecipeCards(recipeArray) {
 
 // Get recipe details for the recipe page that matches the ID
 async function getRecipeInfo(recipeId) {
-  let response = await fetch("assets/data/sample_meals.json");
-  let data = await response.json();
-  return data.meals.find(function (meal) {
-    return meal.idMeal === recipeId;
-  });
+  const response = await fetch('assets/data/sample_meals.json');
+  const data = await response.json();
+  return data.meals.find((meal) => meal.idMeal === recipeId);
 }
 
 /**
@@ -103,18 +103,18 @@ async function getRecipeInfo(recipeId) {
  */
 
 function showRecipePageDetails(recipe) {
-  document.querySelector(".recipe-header h2").textContent = recipe.strMeal;
-  document.querySelector(".recipe-image").src = recipe.strMealThumb;
+  document.querySelector('.recipe-header h2').textContent = recipe.strMeal;
+  document.querySelector('.recipe-image').src = recipe.strMealThumb;
 
   // Show ingredients
-  let ingredientsList = document.querySelector(".ingredients ul");
-  ingredientsList.innerHTML = "";
+  const ingredientsList = document.querySelector('.ingredients ul');
+  ingredientsList.innerHTML = '';
   for (let i = 1; i <= 20; i++) {
-    let ingredient = recipe["strIngredient" + i];
-    let measure = recipe["strMeasure" + i];
+    const ingredient = recipe[`strIngredient${i}`];
+    const measure = recipe[`strMeasure${i}`];
     // Trim the checkbox list otherwise 20 ingredients boxes will display
     if (ingredient && ingredient.trim()) {
-      let listItem = document.createElement("li");
+      const listItem = document.createElement('li');
       listItem.innerHTML = `<input type="checkbox" /> ${measure} ${ingredient}`;
       ingredientsList.appendChild(listItem);
     }
@@ -122,29 +122,29 @@ function showRecipePageDetails(recipe) {
 
   // Show instructions and display in a numbered steps sequence
   // Get the full instruction text from the recipe
-  let instructions = recipe.strInstructions;
+  const instructions = recipe.strInstructions;
 
   // Split the instructions into parts (by newlines or periods REGEX)
-  let instructionExtracted = instructions.split(/\r?\n|\.\s+/);
+  const instructionExtracted = instructions.split(/\r?\n|\.\s+/);
 
   // Create an empty list to hold the clean INSTRCUTION steps
-  let stepList = [];
+  const stepList = [];
 
   // Go through each step and clean it up
   for (let i = 0; i < instructionExtracted.length; i++) {
-    let step = instructionExtracted[i].trim(); // remove extra spaces
+    const step = instructionExtracted[i].trim(); // remove extra spaces
 
     if (step.length > 0) {
       stepList.push(step); // only add it if it's not empty
     }
   }
 
-  let instructionSteps = document.querySelector(".instructions");
-  instructionSteps.innerHTML = "<h3>Instructions</h3>";
+  const instructionSteps = document.querySelector('.instructions');
+  instructionSteps.innerHTML = '<h3>Instructions</h3>';
 
-  stepList.forEach(function (steps, index) {
-    let stepDiv = document.createElement("div");
-    stepDiv.classList.add("step");
+  stepList.forEach((steps, index) => {
+    const stepDiv = document.createElement('div');
+    stepDiv.classList.add('step');
     stepDiv.innerHTML = `
       <div class="circle">${index + 1}</div>
       <p>${steps}</p>
@@ -153,11 +153,11 @@ function showRecipePageDetails(recipe) {
   });
 
   // Show meta info
-  let metaInfo = document.querySelector(".meta");
+  const metaInfo = document.querySelector('.meta');
   metaInfo.innerHTML = `
     <span>⏱️ ~15 mins</span>
     <span>🍽️ 2 servings</span>
-    <span>🌱 ${recipe.strCategory || "No Category"}</span>
+    <span>🌱 ${recipe.strCategory || 'No Category'}</span>
   `; // Display No Category if not available
 }
 
@@ -166,21 +166,21 @@ function showRecipePageDetails(recipe) {
  * It listens for typing and shows recipes that match the text.
  */
 function searchRecipes() {
-  let searchBox = document.getElementById("search-input");
+  const searchBox = document.getElementById('search-input');
 
   if (searchBox) {
-    searchBox.addEventListener("input", function () {
+    searchBox.addEventListener('input', () => {
       // Get what the user typed and make it lowercase
-      let searchText = searchBox.value.toLowerCase();
+      const searchText = searchBox.value.toLowerCase();
 
       // Make a new list of recipes that match the search
-      let foundRecipes = allRecipes.filter(function (recipe) {
-        // Check if the name, instructions or category include what the user typed
-        let name = recipe.strMeal.toLowerCase().includes(searchText);
-        let instruction = recipe.strInstructions
+      const foundRecipes = allRecipes.filter((recipe) => {
+        // Include what the user typed
+        const name = recipe.strMeal.toLowerCase().includes(searchText);
+        const instruction = recipe.strInstructions
           .toLowerCase()
           .includes(searchText);
-        let category = recipe.strCategory.toLowerCase().includes(searchText);
+        const category = recipe.strCategory.toLowerCase().includes(searchText);
 
         return name || instruction || category;
       });
@@ -192,10 +192,10 @@ function searchRecipes() {
 }
 
 // Start the app when the page is ready
-document.addEventListener("DOMContentLoaded", async function () {
+document.addEventListener('DOMContentLoaded', async () => {
   // Check which page has loaded
-  let recipeHomePage = document.getElementById("recipes");
-  let recipePage = document.querySelector(".recipe-header");
+  const recipeHomePage = document.getElementById('recipes');
+  const recipePage = document.querySelector('.recipe-header');
 
   // If we're on the main recipe list page
   if (recipeHomePage) {
@@ -205,29 +205,29 @@ document.addEventListener("DOMContentLoaded", async function () {
   }
   // If we're on the recipe details page
   if (recipePage) {
-    let recipeId = new URLSearchParams(window.location.search).get("id");
+    const recipeId = new URLSearchParams(window.location.search).get('id');
     if (recipeId) {
-      let recipe = await getRecipeInfo(recipeId);
+      const recipe = await getRecipeInfo(recipeId);
       showRecipePageDetails(recipe);
     }
   }
   // Form submit function
-  const form = document.getElementById("contact-form");
+  const form = document.getElementById('contact-form');
   if (form) {
-    form.addEventListener("submit", function (e) {
+    form.addEventListener('submit', (e) => {
       e.preventDefault(); // Stop actual form submit
-      alert("Form sent! Thank you for your message.");
+      alert('Form sent! Thank you for your message.');
       form.reset(); // Optional: clear the form
     });
   }
 
   // Highlight the active links in the nav bar
-  let currentFile = window.location.pathname.split("/").pop();
-  let menuLinks = document.querySelectorAll("#nav-menu a");
+  const currentFile = window.location.pathname.split('/').pop();
+  const menuLinks = document.querySelectorAll('#nav-menu a');
 
-  menuLinks.forEach(function (link) {
-    if (link.getAttribute("href") === currentFile) {
-      link.classList.add("active");
+  menuLinks.forEach((link) => {
+    if (link.getAttribute('href') === currentFile) {
+      link.classList.add('active');
     }
   });
 });

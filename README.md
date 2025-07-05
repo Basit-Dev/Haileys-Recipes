@@ -245,8 +245,13 @@ This test plan checks the website for functionality, usability, and responsivene
 </p>
 
 <p align="center">
-  <strong>css</strong><br>
+  <strong>CSS</strong><br>
   <img src="documentation/validation/css-validation.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>JavaScript</strong><br>
+  <img src="documentation/validation/js-validation.png" alt="Colour Theme" width="300" />
 </p>
 
 ---

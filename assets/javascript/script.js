@@ -17,7 +17,6 @@ function hideSpinner() {
   }
 }
 
-
 /**
  * Loads recipes from the JSON file.
  * @returns {Promise} A Promise that resolves to an array of recipe objects.
@@ -49,7 +48,7 @@ function displayRecipeCards(recipeArray) {
   let recipeSection = document.getElementById("recipes");
   let noRecipesFoundMessage = document.getElementById("no-recipes");
 
-  recipeSection.innerHTML = ""; 
+  recipeSection.innerHTML = "";
   // Clear any old cards for when searching recipes
 
   // show no recipes found message
@@ -123,7 +122,7 @@ function showRecipePageDetails(recipe) {
 
   // Show instructions and display in a numbered steps sequence
   // Get the full instruction text from the recipe
-  let instructions = recipe.strInstructions
+  let instructions = recipe.strInstructions;
 
   // Split the instructions into parts (by newlines or periods REGEX)
   let instructionExtracted = instructions.split(/\r?\n|\.\s+/);
@@ -153,12 +152,12 @@ function showRecipePageDetails(recipe) {
     instructionSteps.appendChild(stepDiv);
   });
 
-      // Show meta info
-  let metaInfo = document.querySelector('.meta');
+  // Show meta info
+  let metaInfo = document.querySelector(".meta");
   metaInfo.innerHTML = `
     <span>⏱️ ~15 mins</span>
     <span>🍽️ 2 servings</span>
-    <span>🌱 ${recipe.strCategory || 'No Category'}</span>
+    <span>🌱 ${recipe.strCategory || "No Category"}</span>
   `; // Display No Category if not available
 }
 
@@ -178,7 +177,9 @@ function searchRecipes() {
       let foundRecipes = allRecipes.filter(function (recipe) {
         // Check if the name, instructions or category include what the user typed
         let name = recipe.strMeal.toLowerCase().includes(searchText);
-        let instruction = recipe.strInstructions.toLowerCase().includes(searchText);
+        let instruction = recipe.strInstructions
+          .toLowerCase()
+          .includes(searchText);
         let category = recipe.strCategory.toLowerCase().includes(searchText);
 
         return name || instruction || category;
@@ -210,7 +211,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       showRecipePageDetails(recipe);
     }
   }
-    // Form submit function
+  // Form submit function
   const form = document.getElementById("contact-form");
   if (form) {
     form.addEventListener("submit", function (e) {
@@ -221,12 +222,12 @@ document.addEventListener("DOMContentLoaded", async function () {
   }
 
   // Highlight the active links in the nav bar
-  let currentFile = window.location.pathname.split('/').pop();
-  let menuLinks = document.querySelectorAll('#nav-menu a');
+  let currentFile = window.location.pathname.split("/").pop();
+  let menuLinks = document.querySelectorAll("#nav-menu a");
 
   menuLinks.forEach(function (link) {
-    if (link.getAttribute('href') === currentFile) {
-      link.classList.add('active');
+    if (link.getAttribute("href") === currentFile) {
+      link.classList.add("active");
     }
   });
 });

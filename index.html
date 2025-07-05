@@ -2,101 +2,104 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hailey's Recipes - Home</title>
-    <link rel="stylesheet" href="assets/styles/styles.css" >
+    <link rel="stylesheet" href="assets/styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <!-- Header -->
-    <header class="header">
-        <div class="logo-container">
-           <a href="index.html" class="logo">
-            <img src="./assets/images/logo/main-logo.png" alt="Logo" >
-            <span>Hailey's Recipes</span></a>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <nav id="nav-menu" class="nav-links">
-            <ul>
-                <li><a href="index.html" target="_self">Home</a></li>
-                <li><a href="recipe.html" target="_self">Recipes</a></li>
-                <li><a href="about.html" target="_self">About</a></li>
-            </ul>
-        </nav>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="./assets/images/logo/main-logo.png" alt="Logo">
+                    <span>Hailey's Recipes</span></a>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <nav id="nav-menu" class="nav-links">
+                    <ul>
+                        <li><a href="index.html" target="_self">Home</a></li>
+                        <li><a href="recipe.html" target="_self">Recipes</a></li>
+                        <li><a href="about.html" target="_self">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Header End -->
+
+        <!-- Search Section -->
+        <section class="hero">
+            <h1>Discover Amazing Recipes</h1>
+            <p>Find your next favorite dish from our collection of delicious recipes</p>
+            <input type="text" id="search-input" placeholder="Search recipes or ingredients...">
+        </section>
+        <!-- Search Section End -->
+
+        <!-- LOADING SPINNER -->
+        <div id="spinner" class="spinner-container">
+            <div class="spinner"></div>
         </div>
-    </header>
+        <!-- LOADING SPINNER END-->
 
-    <!-- Header End -->
+        <!-- Recipe Container -->
+        <main class="grid-container">
+            <div id="recipes" class="recipes">
+                <!-- Load cards dynamically -->
+            </div>
+            <!-- No recipe found message hidden by default-->
+            <p id="no-recipes" style="text-align:center; display:none;">No recipes found. Try a different search or
+                filter
+            </p>
+        </main>
+        <!-- Recipe Container End -->
 
-    <!-- Search Section -->
-    <section class="hero">
-        <h1>Discover Amazing Recipes</h1>
-        <p>Find your next favorite dish from our collection of delicious recipes</p>
-        <input type="text" id="search-input" placeholder="Search recipes or ingredients..." >
-    </section>
-    <!-- Search Section End -->
+        <!-- Footer -->
+        <footer>
+            <div class="footer-top">
+                <div>
+                    <h3>Hailey's Recipes</h3>
+                    <p>Discover and share amazing recipes from around the world.</p>
+                </div>
 
-    <!-- LOADING SPINNER -->
-    <div id="spinner" class="spinner-container">
-        <div class="spinner"></div>
+                <div>
+                    <h3>Our Location</h3>
+                    <p>123 Hailey Rd</p>
+                    <p>Hailey City, PO BOX 123</p>
+                </div>
+                <div class="social-links">
+                    <h3>Follow Us</h3>
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                        <img src="assets/icons/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                        <img src="assets/icons/twitter.svg" alt="Twitter">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                        <img src="assets/icons/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest">
+                        <img src="assets/icons/pinterest.svg" alt="Pinterest">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Hailey's Recipes All rights reserved.</p>
+            </div>
+        </footer>
+        <!-- Footer End -->
     </div>
-    <!-- LOADING SPINNER END-->
-
-    <!-- Recipe Container -->
-    <main class="grid-container">
-        <div id="recipes" class="recipes">
-            <!-- Load cards dynamically -->
-        </div>
-        <!-- No recipe found message hidden by default-->
-        <p id="no-recipes" style="text-align:center; display:none;">No recipes found. Try a different search or filter
-        </p>
-    </main>
-    <!-- Recipe Container End -->
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-top">
-            <div>
-                <h3>Hailey's Recipes</h3>
-                <p>Discover and share amazing recipes from around the world.</p>
-            </div>
-
-            <div>
-                <h3>Our Location</h3>
-                <p>123 Hailey Rd</p>
-                <p>Hailey City, PO BOX 123</p>
-            </div>
-            <div class="social-links">
-                <h3>Follow Us</h3>
-                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-                    <img src="assets/icons/facebook.svg" alt="Facebook" >
-                </a>
-                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
-                    <img src="assets/icons/twitter.svg" alt="Twitter" >
-                </a>
-                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-                    <img src="assets/icons/instagram.svg" alt="Instagram" >
-                </a>
-                <a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest">
-                    <img src="assets/icons/pinterest.svg" alt="Pinterest" >
-                </a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2025 Hailey's Recipes All rights reserved.</p>
-        </div>
-    </footer>
-    <!-- Footer End -->
 
     <script src="assets/javascript/script.js"></script>
-    
+
 </body>
 
 </html>

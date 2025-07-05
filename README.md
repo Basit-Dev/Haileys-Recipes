@@ -33,16 +33,6 @@ These user stories describe the features and functionality of the application fr
 - Right near the top
 - Type in what you’re looking for (like “pasta”) and it filters recipes right away
 
-### Filter Buttons
-- You can click buttons like:
-  - All
-  - Breakfast
-  - Lunch
-  - Dinner
-  - Vegan
-  - Quick & Easy  
-- These help narrow down what you see
-
 ### Recipe Cards
 - Each card shows:
   - A recipe picture
@@ -58,9 +48,7 @@ These user stories describe the features and functionality of the application fr
 ## How It All Works
 
 - **Search bar:** As you type, the list of recipes updates right away — no need to press Enter!
-- **Filter buttons:** Just click one, and only recipes in that category will show
-- **Load More:** Only a few recipes show at first — click the button to show more
-- **Navigation bar:** Has links to different pages like Home, Categories, and About
+- **Navigation bar:** Has links to different pages like Home, Recipes, and About
 
 ---
 
@@ -72,6 +60,9 @@ These user stories describe the features and functionality of the application fr
 These helped me figure out how to keep things simple and clean.
 
 ---
+
+## API
+- There is a charge for the API from https://www.themealdb.com/ therefore I have created a sample JSON file that represents the data.
 
 ## Credits
 - Logo by Canva
@@ -154,5 +145,84 @@ I chose this color palette to create a clean, modern, and inviting recipe browsi
 
 - **Dark grey and black text**  
   Used for strong readability and contrast against the white background. Keeps the content professional and easy to navigate.
+
+  ---
+
+## Testing: Manual vs Automated
+
+To make sure this website works correctly and looks great, we need to test it to ensure everything works.
+
+### Manual Testing – Test by Hand
+
+This is when you manually test the website.
+
+#### Use manual testing for:
+
+- User experience (UX)
+- Layout and design
+- Quick checks
+- Open the site
+- Try searching recipes
+- Click recipe cards
+- Submit the contact form
+
+---
+
+### Automated Testing by using code
+
+Automated testing uses tools like Jest to test the logic.
+
+#### Use automated testing for:
+
+- Reusable functions
+- Quick, repeatable checks
+- Avoiding bugs after changes
+
+---
+
+
+## Test 
+
+This test plan checks the website for functionality, usability, and responsiveness.
+
+### 1. Functionality – Does everything work?
+
+1. Open the home page – Recipes load automatically from the JSON file.
+2. Use the search bar – Typing something like "chicken" it filters the recipes.
+3. Click a recipe card – Takes you to the detailed recipe page.
+4. Check the recipe page – Ingredients and steps should show properly.
+5. Fill out the contact form – After clicking "Send", an alert appears and the form resets.
+6. Click navigation links – Takes you to the correct pages.
+7. Loading - Whilst recipes are loading the spinner shows.
+8. No data - If there isnt any data or recipes found a message displays highlighting that.
+
+---
+
+### 2. Usability – Is the site easy to use?
+
+1. Look at the layout – Its clean and easy to follow.
+2. Try the contact form – Fields are easy to understand and fill.
+3. Use the search bar – Results displays and is fast.
+4. Click around the nav bar – Displays which page you're on.
+5. Check buttons and links – Easy to click.
+
+---
+
+### 3. Responsiveness – Does it work on different screen sizes?
+
+1. Open on a mobile phone – Layout adjusts and be readable.
+2. Open on a tablet – Everything looks clean and fits the screen.
+3. Open on a desktop – Page fills the space nicely.
+4. Use the hamburger menu on small screens – It opens and show the nav links.
+
+---
+
+### 4. Re-check After Changes
+
+1. After making changes to the code or styles, go through these steps again.
+2. Make sure search, recipes, and the contact form still work as expected.
+
+---
+  
 
   

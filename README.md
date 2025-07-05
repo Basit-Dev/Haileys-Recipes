@@ -289,6 +289,12 @@ This test plan checks the website for functionality, usability, and responsivene
 </p>
 
 <p align="center">
+  <strong>About Message Input Field Error</strong><br>
+  <img src="documentation/test/about-message-input-error-screenshot.png" alt="Colour Theme" width="300" />
+</p>
+
+
+<p align="center">
   <strong>About Message Sent Alert</strong><br>
   <img src="documentation/test/about-message-sent-screenshot.png" alt="Colour Theme" width="300" />
 </p>
@@ -297,5 +303,6 @@ This test plan checks the website for functionality, usability, and responsivene
   <strong>Recipe Not Selected</strong><br>
   <img src="documentation/test/recipe-not-selected-screenshot.png" alt="Colour Theme" width="300" />
 </p>
+
  
 ---

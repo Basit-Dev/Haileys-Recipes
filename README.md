@@ -306,3 +306,6 @@ This test plan checks the website for functionality, usability, and responsivene
 
  
 ---
+
+## GitHub Pages Live Link of working project
+-- https://basit-dev.github.io/Haileys-Recipes/index.html

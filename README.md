@@ -226,6 +226,8 @@ This test plan checks the website for functionality, usability, and responsivene
 1. After making changes to the code or styles, go through these steps again.
 2. Make sure search, recipes, and the contact form still work as expected.
 
+### 4. Manual testing Spredsheet
+
 <p align="center">
   <strong>Manual testing Spredsheet</strong><br>
   <img src="documentation/test/manual-test-spreadsheet.png" alt="Colour Theme" width="300" />
@@ -369,9 +371,21 @@ This test plan checks the website for functionality, usability, and responsivene
 ---
 
 ## Deployment GitHub Pages Live Link of working project
--- https://basit-dev.github.io/Haileys-Recipes/index.html
 
+I followed these steps to deploy on GitHub Pages.
 
+1. Enabled GitHub Pages:
+   - Went to the repository on GitHub.
+   - Opened the settings tab.
+   - Scrolled to the pages section.
+   - Selected the main branch and the /root folder.
+   - Clicked Save.
+
+3. Waited for deployment:
+   - GitHub took a few seconds to build and deploy the site.
+   - The live site was available at: https://basit-dev.github.io/Haileys-Recipes/index.html
+
+---
 
 ## Screenshots of Git Commits
 
@@ -416,9 +430,29 @@ This test plan checks the website for functionality, usability, and responsivene
 
 ### Tools & Practices
 
-- **Languages:** HTML5, CSS3, JavaScript 
-- **Version Control:** Git and GitHub for repository hosting
-- **Linting:** ESLint used for code quality and consistency
-- **Debugging & Testing:** Browser DevTools for layout testing and responsive design
-- **Deployment:** GitHub Pages for live project hosting
-- **Best Practices:** Used semantic HTML, organized code into logical functions, and included accessibility-friendly labels and alt text
+- **Languages:** HTML5, CSS3, JavaScript.
+- **Version Control:** Git and GitHub for repository hosting.
+- **Linting:** ESLint used for code quality and consistency.
+- **Debugging & Testing:** Browser DevTools for layout testing and responsive design.
+- **Deployment:** GitHub Pages for live project hosting.
+- **Best Practices:** Used semantic HTML, organized code into logical functions, and included accessibility-friendly labels and alt text.
+
+---
+
+### Performance & Accessibility (LightHouse)
+
+<p align="center">
+  <strong>LightHouse Home</strong><br>
+  <img src="documentation/test/performance/lighthouse-home.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>LightHouse Recipe</strong><br>
+  <img src="documentation/test/performance/lighthouse-recipe.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>LightHouse About</strong><br>
+  <img src="documentation/test/performance/lighthouse-about.png" alt="Colour Theme" width="300" />
+</p>
+

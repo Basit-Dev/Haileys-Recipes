@@ -314,3 +314,23 @@ This test plan checks the website for functionality, usability, and responsivene
 
 ## GitHub Pages Live Link of working project
 -- https://basit-dev.github.io/Haileys-Recipes/index.html
+
+
+## Screenshots of Git Commits
+
+<p align="center">
+  <strong>Screenshot 1</strong><br>
+  <img src="documentation/commits/git-commits-1.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>Screenshot 2</strong><br>
+  <img src="documentation/commits/git-commits-2.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>Screenshot 3</strong><br>
+  <img src="documentation/commits/git-commits-3.png" alt="Colour Theme" width="300" />
+</p>
+
+---

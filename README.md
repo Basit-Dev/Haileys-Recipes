@@ -250,3 +250,52 @@ This test plan checks the website for functionality, usability, and responsivene
 </p>
 
 ---
+
+## Screenshots of working project
+
+<p align="center">
+  <strong>index.html</strong><br>
+  <img src="documentation/test/index.html screenshot.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>recipe.html</strong><br>
+  <img src="documentation/test/recipe.html screenshot.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>about.html</strong><br>
+  <img src="documentation/test/about.html screenshot.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>Search Meal</strong><br>
+  <img src="documentation/test/search-meal-screenshot.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">     
+  <strong>Search Ingredient</strong><br>
+  <img src="documentation/test/search-ingredient-screenshot.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>No Recipe Found Message</strong><br>
+  <img src="documentation/test/no-recipe-found-screenshot.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>About Message Input Field</strong><br>
+  <img src="documentation/test/about-message-screenshot.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>About Message Sent Alert</strong><br>
+  <img src="documentation/test/about-message-sent-screenshot.png" alt="Colour Theme" width="300" />
+</p>
+
+<p align="center">
+  <strong>Recipe Not Selected</strong><br>
+  <img src="documentation/test/recipe-not-selected-screenshot.png" alt="Colour Theme" width="300" />
+</p>
+ 
+---
